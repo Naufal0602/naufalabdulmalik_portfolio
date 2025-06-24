@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muiz - Creative Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="output.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': '#6366f1',
+                        'secondary': '#8b5cf6',
+                        'accent': '#f59e0b',
+                        'dark': '#0f172a',
+                        'gray-dark': '#1e293b',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-500 font-inter">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-transparant backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-gray-100">
+                    MU<span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">IZ</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-white hover:text-primary">Home</a>
+                    <a href="#about" class="nav-link text-white hover:text-primary">About</a>
+                    <a href="#skills" class="nav-link text-white hover:text-primary">Skills</a>
+                    <a href="#services" class="nav-link text-white hover:text-primary">Services</a>
+                    <a href="#portfolio" class="nav-link text-white hover:text-primary">Portfolio</a>
+                    <a href="#contact" class="nav-link text-white hover:text-primary">Contact</a>
+                </div>
+                <button class="md:hidden p-2">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient min-h-screen flex items-center justify-center relative overflow-hidden">
+        <!-- Floating Shapes -->
+        <div class="absolute top-20 left-10 floating">
+            <div class="w-12 h-12 bg-primary/20 rounded-full"></div>
+        </div>
+        <div class="absolute top-32 right-16 floating" style="animation-delay: -2s;">
+            <div class="w-8 h-8 bg-secondary/30 rotate-45"></div>
+        </div>
+        <div class="absolute bottom-32 left-20 floating" style="animation-delay: -4s;">
+            <div class="w-16 h-16 border-2 border-accent/40 rounded-lg rotate-12"></div>
+        </div>
+        <div class="absolute bottom-20 right-12 floating" style="animation-delay: -1s;">
+            <div class="w-6 h-6 bg-accent/50 rounded-full"></div>
+        </div>
+        
+        <div class="max-w-4xl mx-auto px-6 text-center text-white relative z-10">
+            <div class="mb-8">
+                <div class="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-primary to-secondary p-1 mb-6"  data-aos="flip-right" data-aos-delay="100">
+                    <div class="w-full h-full rounded-full bg-white flex items-center justify-center">
+                        <img src="img/image_about1.jpg" alt="" class="rounded-full w-28 h-28 object-cover">
+                    </div>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold mb-4" data-aos="fade-up" data-aos-delay="200">
+                    Hello, I'm <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"><br>Muhammad Naufal Abdul Malik</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 mb-8" data-aos="fade-down" data-aos-delay="200">Siswa Jurusan Rekayasa Perangkat Lunak</p>
+                <div class="flex justify-center space-x-4 mb-8">
+                    <a href="#" class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition hover:bg-purple-600 hover:scale-110 transition duration-300
+">
+                        <i class="fab fa-instagram text-white"></i>
+                    </a>
+                    <a href="#" class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition hover:bg-purple-600 hover:scale-110 transition duration-300
+">
+                        <i class="fab fa-youtube text-white"></i>
+                    </a>
+                    <a href="#" class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition hover:bg-purple-600 hover:scale-110 transition duration-300">
+                        <i class="fab fa-facebook text-white"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white/60">
+            <div class="animate-bounce">
+                <i class="fas fa-chevron-down text-2xl"></i>
+            </div>
+        </div>
+    </section>
+
+ <!-- About Section (Modern Design) -->
+<section id="about" class="py-20 px-8 min-h-screen hero-gradient relative overflow-hidden">
+    <!-- Background decorative elements -->
+    <div class="absolute top-20 left-20 w-32 h-32 bg-purple-500/10 rounded-full blur-xl"></div>
+    <div class="absolute bottom-20 right-20 w-40 h-40 bg-blue-500/10 rounded-full blur-xl"></div>
+    <div class="absolute top-1/2 left-1/4 w-2 h-2 bg-purple-400 rounded-full animate-pulse"></div>
+    <div class="absolute top-1/3 right-1/3 w-1 h-1 bg-blue-400 rounded-full animate-pulse"></div>
+    
+    <div class="max-w-6xl mx-auto relative z-10">
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+            <h2 class="text-6xl font-bold text-white mb-4">
+                About <span class="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">Me</span>
+            </h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-purple-500 to-blue-500 mx-auto rounded-full"></div>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <!-- Profile Image -->
+            <div class="flex justify-center lg:justify-start">
+                <div class="relative">
+                    <!-- Glowing border effect -->
+                    <div class="absolute -inset-1 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full blur opacity-75 animate-pulse"></div>
+                    <div class="relative w-80 h-80 rounded-full overflow-hidden bg-slate-800 border-4 border-slate-700">
+                        <img src="img/image_about1.jpg" class="w-full h-full object-cover" alt="Abdul Muiz Affath">
+                    </div>
+                    <!-- Floating decorative elements -->
+                    <div class="absolute -top-4 -right-4 w-8 h-8 bg-purple-500 rounded-full animate-bounce"></div>
+                    <div class="absolute -bottom-4 -left-4 w-6 h-6 bg-blue-500 rounded-full animate-bounce" style="animation-delay: 0.5s;"></div>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="space-y-8">
+                <!-- Name and Title -->
+                <div>
+                    <h3 class="text-5xl font-bold mb-4">
+                        <span class="text-white">Hello, I'm </span><br>
+                        <span class="bg-gradient-to-r md:text-center sm:text-center from-purple-400 to-blue-400 bg-clip-text text-transparent">Muhammad Naufal Abdul Malik</span>
+                    </h3>
+                    <p class="text-xl text-slate-300 mb-6">Student at SMKN 1 CIOMAS</p>
+                </div>
+
+                <!-- Description -->
+                <div class="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-8" data-aos="fade-left"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="500"
+                    data-aos-duration="500">
+                    <p class="text-slate-300 text-lg leading-relaxed mb-6">
+                      Saya adalah siswa SMK Negeri 1 Ciomas jurusan Pengembangan Perangkat Lunak dan Gim (PPLG), dengan minat besar di bidang pengembangan aplikasi, baik frontend maupun backend. Terbiasa menggunakan teknologi seperti HTML, CSS, Laravel, TailwindCSS untuk tampilan antarmuka, serta PHP dan Laravel untuk pengelolaan backend. Saya dikenal sebagai pribadi yang teliti, logis, serta mampu bekerja secara mandiri maupun dalam tim.
+                    </p>
+                    
+                    <!-- Skills badges -->
+                    <div class="flex flex-wrap gap-3 mb-8">
+                        <span class="px-4 py-2 flex gap-3 bg-gradient-to-r from-purple-500/20 to-blue-500/20 border border-purple-500/30 rounded-full text-purple-300 text-sm font-medium">
+                            <img src="progamming_image.png" alt="" class="w-5 h-5 object-cover">Progammer</span>
+                        <span class="px-4 py-2  flex gap-3 bg-gradient-to-r from-purple-500/20 to-blue-500/20 border border-blue-500/30 rounded-full text-blue-300 text-sm font-medium"><img src="volleyball-ball.png" alt="" class="w-5 h-5 object-cover">Volleyball Player</span>
+                        <span class="px-4 py-2  flex gap-3 bg-gradient-to-r from-purple-500/20 to-blue-500/20 border border-purple-500/30 rounded-full text-purple-300 text-sm font-medium"><img src="data-research.png" alt="" class="w-5 h-5 object-cover">Analyst</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="skills-section hero-gradient">
+        <div class="floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+        
+        <div class="text-center">
+            <div class="section-header">
+                <h2 class="section-title">My Skills</h2>
+                <p class="section-subtitle">Tools, technologies and abilities I work with</p>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Hard Skills -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div>
+                            <h3 class="category-title">Hard Skills</h3>
+                            <p class="category-subtitle">Technical expertise & tools</p>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <div class="skill-icon">
+                                        <i class="fa-brands fa-html5"></i>
+                                    </div>
+                                    <span class="skill-name">HTML 5</span>
+                                </div>
+                            </div>
+                            <p class="skill-description">Bahasa pemrograman untuk pengembangan web modern, termasuk ES6+, async/await, dan manipulasi DOM.</p>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <div class="skill-icon">
+                                        <i class="fa-brands fa-laravel"></i>
+                                    </div>
+                                    <span class="skill-name">Laravel</span>
+                                </div>
+                            </div>
+                            <p class="skill-description">Framework JavaScript untuk membangun user interface yang interaktif dengan komponen reusable dan state management.</p>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <div class="skill-icon">
+                                        <i class="fa-brands fa-css3-alt"></i>
+                                    </div>
+                                    <span class="skill-name">css</span>
+                                </div>
+                            </div>
+                            <p class="skill-description">Runtime JavaScript untuk backend development, API creation, dan server-side programming.</p>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <div class="skill-icon">
+                                        <i class="fa-brands fa-php"></i>
+                                    </div>
+                                    <span class="skill-name">php</span>
+                                </div>
+                            </div>
+                            <p class="skill-description">NoSQL database untuk menyimpan dan mengelola data dengan struktur dokumen yang fleksibel.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Soft Skills -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div>
+                            <h3 class="category-title">Soft Skills</h3>
+                            <p class="category-subtitle">Personal & interpersonal abilities</p>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-handshake"></i>
+                                    </div>
+                                    <span class="skill-name">Kerja Sama</span>
+                                </div>
+                            </div>
+                            <p class="skill-description">Kemampuan bekerja sama dalam tim, berkolaborasi efektif, dan mencapai tujuan bersama dengan harmonis.</p>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-comments"></i>
+                                    </div>
+                                    <span class="skill-name">Komunikasi</span>
+                                </div>
+                            </div>
+                            <p class="skill-description">Kemampuan berkomunikasi dengan jelas, mendengarkan aktif, dan menyampaikan ide secara efektif kepada berbagai audiens.</p>
+                        </div>
+                        
+                    
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-puzzle-piece"></i>
+                                    </div>
+                                    <span class="skill-name">Adaptasi</span>
+                                </div>
+                            </div>
+                            <p class="skill-description">Kemampuan beradaptasi dengan perubahan, fleksibilitas dalam menghadapi tantangan baru, dan learn continuously.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+
+    <!-- Services Section -->
+<section id="services" class="py-20 hero-gradient">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl section-title mb-4">Sertifikat</h2>
+                <p class="text-xl section-subtitle">Sertifikat yang saya dapatkan</p>
+            </div>
+            
+           <div class="portfolio-grid">
+                <a href="sertifikat/2024.pdf" target="_blank" class="block">
+                    <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-lg">
+                        <div class="h-64 bg-gradient-to-br from-pink-400 to-rose-400 flex items-center justify-center">
+                            <img src="img/Screenshot 2025-05-25 214348.png" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Event Documentation</h3>
+                            <p class="text-gray-600">Complete event coverage with highlight reel</p>
+                        </div>
+                    </div>
+                </a>
+                
+                 <a href="sertifikat/CamScanner 10-10-2024 05.59.pdf" target="_blank" class="block">
+                    <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-lg">
+                        <div class="h-64 bg-gradient-to-br from-pink-400 to-rose-400 flex items-center justify-center">
+                            <img src="img/Screenshot 2025-05-25 214409.png" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Event Documentation</h3>
+                            <p class="text-gray-600">Complete event coverage with highlight reel</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="sertifikat/sertifikat_course_123_3421028_231123233648.pdf" target="_blank" class="block">
+                    <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-lg">
+                        <div class="h-64 bg-gradient-to-br from-pink-400 to-rose-400 flex items-center justify-center">
+                            <img src="img/sertifikat_dicoding.png" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Event Documentation</h3>
+                            <p class="text-gray-600">Complete event coverage with highlight reel</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+</section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Recent Works</h2>
+                <p class="text-xl text-gray-600">Check out my latest projects</p>
+            </div>
+            
+            <div class="flex justify-center mb-12">
+                <div class="bg-white p-2 rounded-full shadow-lg">
+                    <button class="px-6 py-2 rounded-full bg-primary text-white font-medium">All</button>
+                    <button class="px-6 py-2 rounded-full text-gray-600 hover:text-primary">Design</button>
+                    <button class="px-6 py-2 rounded-full text-gray-600 hover:text-primary">Photo</button>
+                    <button class="px-6 py-2 rounded-full text-gray-600 hover:text-primary">Video</button>
+                </div>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-lg">
+                    <div class="h-64 bg-gradient-to-br from-purple-400 to-pink-400 flex items-center justify-center">
+                        <i class="fas fa-image text-white text-6xl opacity-60"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Brand Identity Design</h3>
+                        <p class="text-gray-600">Complete brand identity package for a tech startup</p>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-lg">
+                    <div class="h-64 bg-gradient-to-br from-blue-400 to-cyan-400 flex items-center justify-center">
+                        <i class="fas fa-camera text-white text-6xl opacity-60"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Portrait Photography</h3>
+                        <p class="text-gray-600">Professional portrait session with creative editing</p>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-lg">
+                    <div class="h-64 bg-gradient-to-br from-green-400 to-teal-400 flex items-center justify-center">
+                        <i class="fas fa-video text-white text-6xl opacity-60"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Product Video</h3>
+                        <p class="text-gray-600">Commercial product showcase video with motion graphics</p>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-lg">
+                    <div class="h-64 bg-gradient-to-br from-orange-400 to-red-400 flex items-center justify-center">
+                        <i class="fas fa-paint-brush text-white text-6xl opacity-60"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Social Media Pack</h3>
+                        <p class="text-gray-600">Instagram stories and post templates design</p>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-lg">
+                    <div class="h-64 bg-gradient-to-br from-indigo-400 to-purple-400 flex items-center justify-center">
+                        <i class="fas fa-mountain text-white text-6xl opacity-60"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Landscape Photography</h3>
+                        <p class="text-gray-600">Nature photography with professional color grading</p>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-lg">
+                    <div class="h-64 bg-gradient-to-br from-pink-400 to-rose-400 flex items-center justify-center">
+                        <i class="fas fa-film text-white text-6xl opacity-60"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Event Documentation</h3>
+                        <p class="text-gray-600">Complete event coverage with highlight reel</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+     <!-- Contact Section -->
+    <section class="relative py-20 overflow-hidden">
+        <!-- Background Effects -->
+        <div class="absolute inset-0">
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+            <div class="absolute top-3/4 right-1/4 w-96 h-96 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse delay-1000"></div>
+            <div class="absolute top-1/2 left-1/2 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse delay-500"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-6xl mx-auto px-6">
+            <!-- Section Title -->
+            <div class="text-center mb-16">
+                <h2 class="text-5xl md:text-6xl font-extrabold mb-6 gradient-text tracking-tight">
+                    Contact
+                </h2>
+                <p class="text-xl text-gray-300 font-light">
+                    Let's talk about your next project
+                </p>
+            </div>
+
+            <!-- Contact Info Cards -->
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <!-- Phone Card -->
+                <div class="glass-effect card-hover p-8 rounded-3xl group relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-r from-purple-600/10 to-pink-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="relative z-10">
+                        <div class="w-16 h-16 gradient-bg rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:animate-glow">
+                            <i class="fas fa-phone text-white text-xl"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-3 text-center">Phone</h3>
+                        <p class="text-gray-400 text-center">085123456789</p>
+                    </div>
+                </div>
+
+                <!-- Email Card -->
+                <div class="glass-effect card-hover p-8 rounded-3xl group relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-r from-purple-600/10 to-pink-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="relative z-10">
+                        <div class="w-16 h-16 gradient-bg rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:animate-glow">
+                            <i class="fas fa-envelope text-white text-xl"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-3 text-center">Email</h3>
+                        <p class="text-gray-400 text-center break-all">naufalabdulmalik123@gmail.com</p>
+                    </div>
+                </div>
+
+                <!-- Instagram Card -->
+                <div class="glass-effect card-hover p-8 rounded-3xl group relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-r from-purple-600/10 to-pink-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="relative z-10">
+                        <div class="w-16 h-16 gradient-bg rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:animate-glow">
+                            <i class="fab fa-instagram text-white text-xl"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-3 text-center">Instagram</h3>
+                        <p class="text-gray-400 text-center">@naufalmal1k</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content Grid -->
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="glass-effect p-8 md:p-10 rounded-3xl relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-purple-600/5 to-pink-600/5"></div>
+                    <div class="relative z-10">
+                        <h3 class="text-2xl font-bold mb-8 text-white">Send a Message</h3>
+                        
+                        <!-- Success Message -->
+                        <div id="successMessage" class="hidden bg-green-500/10 border border-green-500/30 rounded-xl p-4 mb-6 text-green-400 text-center">
+                            <i class="fas fa-check-circle mr-2"></i>
+                            Message sent successfully! We'll get back to you soon.
+                        </div>
+
+                        <form action="mailto:naufalabdulmalik123@gmail.com" method="POST" id="contactForm" class="space-y-6">
+                            <input type="hidden" name="_subject" value="New Contact Form Submission from Portfolio">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="#success">
+                            
+                            <!-- Name Field -->
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-300 mb-3" for="name">
+                                    Name
+                                </label>
+                                <input 
+                                    class="w-full px-5 py-4 bg-white/5 border border-white/20 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300 backdrop-blur-sm" 
+                                    type="text" 
+                                    id="name" 
+                                    name="name" 
+                                    placeholder="Your full name" 
+                                    required
+                                >
+                            </div>
+                            
+                            <!-- Email Field -->
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-300 mb-3" for="email">
+                                    Email
+                                </label>
+                                <input 
+                                    class="w-full px-5 py-4 bg-white/5 border border-white/20 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300 backdrop-blur-sm" 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    placeholder="your.email@example.com" 
+                                    required
+                                >
+                            </div>
+                            
+                            <!-- Message Field -->
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-300 mb-3" for="message">
+                                    Message
+                                </label>
+                                <textarea 
+                                    class="w-full px-5 py-4 bg-white/5 border border-white/20 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300 backdrop-blur-sm resize-none" 
+                                    id="message" 
+                                    name="message" 
+                                    rows="5" 
+                                    placeholder="Tell us about your project..." 
+                                    required
+                                ></textarea>
+                            </div>
+                            
+                            <!-- Submit Button -->
+                            <button 
+                                type="submit" 
+                                class="w-full gradient-bg px-8 py-4 rounded-xl text-white font-semibold hover:shadow-2xl hover:shadow-purple-500/25 transform hover:-translate-y-1 transition-all duration-300 shimmer-effect relative overflow-hidden"
+                            >
+                                <span class="relative z-10">Send Message</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Map Section -->
+                <div class="glass-effect p-8 md:p-10 rounded-3xl relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-purple-600/5 to-pink-600/5"></div>
+                    <div class="relative z-10">
+                        <h3 class="text-2xl font-bold mb-8 text-white">Our Location</h3>
+                        <div class="rounded-2xl overflow-hidden">
+                            <iframe
+                                class="w-full h-80 map-filter"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.9966942073783!2d106.82715399999999!3d-6.175394999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e9d5c21d1f%3A0x301e8f1fc28b420!2sJakarta!5e0!3m2!1sen!2sid!4v1620921823421!5m2!1sen!2sid"
+                                allowfullscreen=""
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative bg-gradient-to-r from-black via-gray-900 to-black border-t border-white/10 py-12">
+        <div class="absolute inset-0">
+            <div class="absolute bottom-0 left-1/4 w-64 h-64 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
+            <div class="absolute bottom-0 right-1/4 w-64 h-64 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-6xl mx-auto px-6 text-center">
+            <div class="glass-effect inline-block px-8 py-4 rounded-2xl">
+                <p class="text-gray-400">
+                    &copy; 2025 
+                    <span class="gradient-text font-bold text-lg">Muiz</span>
+                    . All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+         AOS.init();
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('button[aria-label="Toggle menu"]');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+           window.addEventListener('load', function() {
+            if (window.location.hash === '#success') {
+                document.getElementById('successMessage').classList.remove('hidden');
+                // Remove hash from URL
+                history.replaceState(null, null, ' ');
+                // Scroll to top
+                window.scrollTo(0, 0);
+            }
+        });
+
+        // Form submission handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            
+            submitBtn.innerHTML = '<i class="fas fa-spinner animate-spin mr-2"></i>Sending...';
+            submitBtn.disabled = true;
+            
+            // Re-enable button after 3 seconds (in case of errors)
+            setTimeout(() => {
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }, 3000);
+        });
+
+        // Add intersection observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards
+        document.querySelectorAll('.card-hover').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
