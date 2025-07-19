@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.7.32/sweetalert2.all.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/output.css">
     <script>
         tailwind.config = {
             theme: {
@@ -161,7 +161,7 @@
             <div class="mb-8">
                 <div class="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-primary to-secondary p-1 mb-6"  data-aos="flip-right" data-aos-delay="100">
                     <div class="w-full h-full rounded-full bg-white flex items-center justify-center">
-                        <img src="img/profile.jpg" alt="" class="rounded-full w-28 h-28 object-cover">
+                        <img src="../src/img/profile.jpg" alt="" class="rounded-full w-28 h-28 object-cover">
                     </div>
                 </div>
                 <h1 class="text-5xl md:text-7xl font-bold mb-4" data-aos="fade-up" data-aos-delay="200">
@@ -214,7 +214,7 @@
                     <!-- Glowing border effect -->
                     <div class="absolute -inset-1 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full blur opacity-75 animate-pulse"></div>
                     <div class="relative w-80 h-80 rounded-full overflow-hidden bg-slate-800 border-4 border-slate-700">
-                        <img src="img/profile.jpg" class="w-full h-full object-cover" alt="Abdul Muiz Affath">
+                        <img src="../src/img/profile.jpg" class="w-full h-full object-cover" alt="Abdul Muiz Affath">
                     </div>
                     <!-- Floating decorative elements -->
                     <div class="absolute -top-4 -right-4 w-8 h-8 bg-purple-500 rounded-full animate-bounce"></div>
@@ -245,9 +245,9 @@
                     <!-- Skills badges -->
                     <div class="flex flex-wrap gap-3 mb-8">
                         <span class="px-4 py-2 flex gap-3 bg-gradient-to-r from-purple-500/20 to-blue-500/20 border border-purple-500/30 rounded-full text-purple-300 text-sm font-medium">
-                            <img src="progamming_image.png" alt="" class="w-5 h-5 object-cover">Progammer</span>
-                        <span class="px-4 py-2  flex gap-3 bg-gradient-to-r from-purple-500/20 to-blue-500/20 border border-blue-500/30 rounded-full text-blue-300 text-sm font-medium"><img src="volleyball-ball.png" alt="" class="w-5 h-5 object-cover">Volleyball Player</span>
-                        <span class="px-4 py-2  flex gap-3 bg-gradient-to-r from-purple-500/20 to-blue-500/20 border border-purple-500/30 rounded-full text-purple-300 text-sm font-medium"><img src="data-research.png" alt="" class="w-5 h-5 object-cover">Analyst</span>
+                            <img src="src/img/progamming_image.png" alt="" class="w-5 h-5 object-cover">Progammer</span>
+                        <span class="px-4 py-2  flex gap-3 bg-gradient-to-r from-purple-500/20 to-blue-500/20 border border-blue-500/30 rounded-full text-blue-300 text-sm font-medium"><img src="src/img/volleyball-ball.png" alt="" class="w-5 h-5 object-cover">Volleyball Player</span>
+                        <span class="px-4 py-2  flex gap-3 bg-gradient-to-r from-purple-500/20 to-blue-500/20 border border-purple-500/30 rounded-full text-purple-300 text-sm font-medium"><img src="src/img/data-research.png" alt="" class="w-5 h-5 object-cover">Analyst</span>
                     </div>
                 </div>
             </div>
@@ -292,7 +292,7 @@
                                     <span class="skill-name">HTML 5</span>
                                 </div>
                             </div>
-                            <p class="skill-description">Bahasa pemrograman untuk pengembangan web modern, termasuk ES6+, async/await, dan manipulasi DOM.</p>
+                            <p class="skill-description">Bahasa markup standar untuk membuat dan menyusun halaman web. Memiliki pemahaman menengah dalam struktur HTML, penggunaan tag semantik, dan integrasi dengan CSS & JavaScript.</p>
                         </div>
                         
                         <div class="skill-item">
@@ -304,7 +304,7 @@
                                     <span class="skill-name">Laravel</span>
                                 </div>
                             </div>
-                            <p class="skill-description">Framework JavaScript untuk membangun user interface yang interaktif dengan komponen reusable dan state management.</p>
+                            <p class="skill-description">Framework PHP yang digunakan untuk membangun aplikasi web berbasis MVC. Mampu menggunakan fitur routing, blade templating, autentikasi, dan database migration pada level menengah.</p>
                         </div>
                         
                         <div class="skill-item">
@@ -316,7 +316,7 @@
                                     <span class="skill-name">css</span>
                                 </div>
                             </div>
-                            <p class="skill-description">Runtime JavaScript untuk backend development, API creation, dan server-side programming.</p>
+                            <p class="skill-description">Bahasa styling untuk mempercantik tampilan web. Mampu menggunakan CSS untuk layout (Flexbox, Grid), responsive design, dan animasi sederhana.</p>
                         </div>
                         
                         <div class="skill-item">
@@ -328,7 +328,7 @@
                                     <span class="skill-name">php</span>
                                 </div>
                             </div>
-                            <p class="skill-description">NoSQL database untuk menyimpan dan mengelola data dengan struktur dokumen yang fleksibel.</p>
+                            <p class="skill-description">Bahasa pemrograman sisi server yang umum digunakan dalam pengembangan web. Menguasai sintaks dasar, pengolahan form, session, dan integrasi database menggunakan MySQL pada tingkat menengah.</p>
                         </div>
                     </div>
                 </div>
@@ -415,10 +415,10 @@
             <!-- Achievement Grid -->
             <div class="portfolio-grid">
                 <!-- Certificate 1 -->
-                <a href="sertifikat/2024.pdf" target="_blank" class="block">
+                <a href="src/sertifikat/2024.pdf" target="_blank" class="block">
                     <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-lg">
                         <div class="card-image">
-                            <img src="img/Screenshot 2025-05-25 214348.png" alt="Sertifikat Seminar Literasi Digital">
+                            <img src="src/img/Screenshot 2025-05-25 214348.png" alt="Sertifikat Seminar Literasi Digital">
                         </div>
                         <div class="card-content">
                             <h3 class="card-title">Sertifikat Seminar Literasi Digital – SMKN 1 Ciomas 2024</h3>
@@ -428,10 +428,10 @@
                 </a>
                 
                 <!-- Certificate 2 -->
-                <a href="sertifikat/CamScanner 10-10-2024 05.59.pdf" target="_blank" class="block">
+                <a href="src/sertifikat/CamScanner 10-10-2024 05.59.pdf" target="_blank" class="block">
                     <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-lg">
                         <div class="card-image">
-                            <img src="img/Screenshot 2025-05-25 214409.png" alt="Sertifikat TOEIC">
+                            <img src="src/img/Screenshot 2025-05-25 214409.png" alt="Sertifikat TOEIC">
                         </div>
                         <div class="card-content">
                             <h3 class="card-title">Sertifikat Hasil TOEIC 2024</h3>
@@ -441,10 +441,10 @@
                 </a>
 
                 <!-- Certificate 3 -->
-                <a href="sertifikat/sertifikat_course_123_3421028_231123233648.pdf" target="_blank" class="block">
+                <a href="src/sertifikat/sertifikat_course_123_3421028_231123233648.pdf" target="_blank" class="block">
                     <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-lg">
                         <div class="card-image">
-                            <img src="img/sertifikat_dicoding.png" alt="Sertifikat Dicoding">
+                            <img src="src/img/sertifikat_dicoding.png" alt="Sertifikat Dicoding">
                         </div>
                         <div class="card-content">
                             <h3 class="card-title">Sertifikat Dicoding - Belajar Dasar Pemrograman Web</h3>
@@ -454,10 +454,10 @@
                 </a>
 
                 <!-- Certificate 4 -->
-                <a href="sertifikat/Muhammad Naufal Abdul Malik - E-Certificate SC Motivation Letter and Interview for Scholarship Preparation MySkill.pdf" target="_blank" class="block">
+                <a href="src/sertifikat/Muhammad Naufal Abdul Malik - E-Certificate SC Motivation Letter and Interview for Scholarship Preparation MySkill.pdf" target="_blank" class="block">
                     <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-lg">
                         <div class="card-image">
-                            <img src="img/Screenshot 2025-07-13 175553.png" alt="Sertifikat MySkill">
+                            <img src="src/img/Screenshot 2025-07-13 175553.png" alt="Sertifikat MySkill">
                         </div>
                         <div class="card-content">
                             <h3 class="card-title">Sertifikat MySkill - Scholarship Preparation</h3>
